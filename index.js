@@ -64,8 +64,8 @@ async function* iterator(maxValue) {
   
           drawElement(image, ctxMain)
         }
-        saveMetadata(i, data[i+1])
-        saveImage(i+1)
+        saveMetadata(i, data[i])
+        saveImage(i)
       } else {
         console.log(`Token ${i} not revealed`)
       }
